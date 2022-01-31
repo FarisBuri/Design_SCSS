@@ -1,0 +1,12 @@
+.services {
+  .container {
+    .boxes {
+      a {
+        &:after {
+          content: "\f30b";
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

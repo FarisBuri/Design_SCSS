@@ -1,0 +1,82 @@
+footer {
+  background-color: #f4f4f4;
+  padding: $padding 0;
+  margin: $padding 0 0 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include smallDevices {
+      flex-direction: column;
+    }
+
+    .gallary {
+      flex-basis: 55%;
+      .img-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        // height: 200px;
+        @include mobile {
+          flex-direction: column;
+        }
+        margin-bottom: 30px;
+        img {
+          height: 200px;
+          width: 100%;
+          border: 2px solid #ccc;
+          padding: 3px;
+        }
+        .desc {
+          h4 {
+            margin-top: 20px;
+            color: $mainColor;
+            margin-bottom: 20px;
+            font-weight: normal;
+          }
+          p {
+            min-width: 200px;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    flex-basis: 15%;
+    ul {
+      li {
+        padding-top: 10px;
+        color: $secondColor;
+      }
+      h4 {
+        color: red;
+        font-weight: normal;
+      }
+      p {
+      }
+    }
+  }
+  .contact {
+    flex-basis: 20%;
+    overflow: hidden;
+    input,
+    textarea {
+      padding: 10px;
+      outline: none;
+      border: none;
+      margin-bottom: 13px;
+      border-radius: 3px;
+      width: 100%;
+    }
+    textarea {
+      height: 150px;
+    }
+    input[type="submit"] {
+      display: block;
+    }
+  }
+  .section-title {
+    color: $mainColor;
+    margin-bottom: 40px;
+  }
+}

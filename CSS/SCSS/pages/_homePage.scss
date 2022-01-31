@@ -1,0 +1,148 @@
+.slider {
+  padding: 20px 0;
+  .container {
+    p {
+      text-align: center;
+      font-weight: bold;
+      padding: 0 40px;
+      margin-bottom: 40px;
+    }
+    .image {
+      img {
+        border-radius: $border;
+        height: 550px;
+        width: 100%;
+        @include mobile {
+          border-radius: 0;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: $dir;
+      gap: 10px;
+      li {
+        width: 15px;
+        height: 15px;
+        border: 3px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      li.active,
+      li:hover {
+        border: 3px solid $mainColor;
+      }
+    }
+  }
+}
+.services {
+  padding: 40px;
+  .container {
+    .boxes {
+      display: flex;
+      gap: 30px;
+      //   flex-wrap: wrap;
+      @include mobile {
+        flex-wrap: wrap;
+      }
+      .title {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        column-gap: 12px;
+        flex-direction: $dir;
+        i {
+          color: $mainColor;
+          font-size: 26px;
+          .boxes .title i {
+            transform: rotate(-90deg);
+          }
+        }
+        h3 {
+          font-size: 15px;
+          color: #555;
+        }
+      }
+      p {
+      }
+      a {
+        display: flex;
+        align-items: center;
+        color: $mainColor;
+        column-gap: 15px;
+        &:after {
+          content: "\f30b";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.our-player {
+  padding: 40px;
+  .container {
+    .boxes {
+      display: flex;
+      gap: 30px;
+      //   flex-wrap: wrap;
+      @include mobile {
+        flex-wrap: wrap;
+      }
+
+      .player-box {
+        border-radius: $border;
+        img {
+          border-radius: $border $border 0 0;
+          width: 100%;
+          height: 200px;
+        }
+        .title {
+          display: flex;
+          /* justify-content: center; */
+          align-items: center;
+          column-gap: 12px;
+          flex-direction: $dir;
+
+          h3 {
+            color: #555;
+            font: {
+              weight: normal;
+              size: 15px;
+            }
+          }
+          span {
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+      p {
+      }
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.lorem {
+  .container {
+    .box {
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+      gap: 40px;
+
+      img {
+        border-radius: $border;
+        width: 100%;
+        height: 200px;
+        position: relative;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// Header
+header {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $dir;
+
+    @include mobile {
+      flex-direction: column;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      flex-direction: $dir;
+      gap: 10px;
+      span {
+        color: $mainColor;
+      }
+      h1 {
+      }
+      i {
+        font-size: 60px;
+        color: $mainColor;
+      }
+    }
+    .navbar {
+      display: flex;
+      flex-direction: $dir;
+      flex-wrap: wrap;
+
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      color: white;
+      border-radius: $border;
+      padding: 5px 10px;
+      height: 45px;
+      li {
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+          transform: translateY(-3px);
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

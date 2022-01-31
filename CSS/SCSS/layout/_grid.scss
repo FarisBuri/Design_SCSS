@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  margin: 0px auto;
+  @include mobile {
+    max-width: 750px;
+  }
+  @include smallDevices {
+    max-width: 950px;
+  }
+  @include bigDevices {
+    max-width: 1070px;
+  }
+}

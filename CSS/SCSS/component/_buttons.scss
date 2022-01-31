@@ -1,0 +1,27 @@
+.main-button {
+  background-color: $mainColor;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  border-radius: $border;
+  font-weight: bold;
+  transition: 1s;
+  cursor: pointer;
+  border: 1px solid white;
+  @include animation(buttonFont) {
+    0% {
+      box-shadow: 0px 0 1px inset #00bcd4;
+    }
+    50% {
+      box-shadow: 0 50px 1px inset #00bcd4;
+    }
+    100% {
+      box-shadow: 0 100px 1px inset #00bcd4;
+    }
+  }
+  //   animation: buttonFont 3s infinite linear alternate;
+  &:hover {
+    box-shadow: 0 50px 15px inset orange;
+  }
+}

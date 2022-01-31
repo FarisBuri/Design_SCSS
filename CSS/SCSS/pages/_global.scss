@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+::selection {
+  background-color: $mainColor;
+  color: white;
+}
+
+p {
+  color: $secondColor;
+  line-height: 1.6;
+}
+
+header .logo h1::selection {
+  background-color: black;
+  color: white;
+}
+header .logo span::selection {
+  background-color: red;
+  color: white;
+}
+a {
+  text-decoration: none;
+}

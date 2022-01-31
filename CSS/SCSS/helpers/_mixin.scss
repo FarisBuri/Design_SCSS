@@ -1,0 +1,58 @@
+// Mobile
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+// small Devices
+@mixin smallDevices {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+// Big Devices
+@mixin bigDevices {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Overlay
+
+@mixin overlay($color: black, $overlay: 0.3) {
+  background-color: rgba($color, $overlay);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+// Prefixe
+
+@mixin prefixer($prop, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$prop}: #{$value};
+  }
+  #{$prop}: #{$value};
+}
+
+// Animation
+
+@mixin animation($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

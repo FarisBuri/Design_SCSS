@@ -1,0 +1,13 @@
+@import "./SCSS/helpers/variables"; // it's first because other import can see the variables
+@import "./SCSS/helpers/mixin";
+@import "./SCSS/helpers/function";
+@import "./SCSS/pages/global";
+@import "./SCSS/component/heading";
+@import "./SCSS/layout/header";
+@import "./SCSS/component/buttons";
+
+@import "./SCSS/layout/grid";
+@import "./SCSS/pages/homePage";
+
+@import "./SCSS/component/buttons";
+@import "./SCSS/layout/footer";
